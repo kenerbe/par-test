@@ -1,7 +1,7 @@
 Exercise: Run Redis locally
 ===========================
 
-![](https://github.com/kenerbe/icons/blob/master/src/Redis.png)
+![](https://github.com/kenerbe/par-test/blob/master/src/Redis.png)
 
 To install locally (on Mac), open a terminal and run:
 ```
@@ -13,7 +13,10 @@ To run a Redis server locally (run in a separate terminal window), run:
 ```
     redis-server
 ```
-Use the Redis command line interface to interact directly with Redis:
+You should see something similar to this.
+![](https://github.com/kenerbe/par-test/blob/master/src/Redis-server.png)
+
+Use the Redis command line interface to interact with the Redis server.
 
 ```
     redis-cli
