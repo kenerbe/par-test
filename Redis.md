@@ -1,7 +1,9 @@
 Exercise: Run Redis locally
 ===========================
 
-To install ![](https://github.com/kenerbe/icons/blob/master/src/Redis.png ), locally (on Mac), open a terminal and run:
+![](https://github.com/kenerbe/icons/blob/master/src/Redis.png)
+
+To install locally (on Mac), open a terminal and run:
 ```
     brew install redis
 ```
