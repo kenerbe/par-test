@@ -1,20 +1,21 @@
 Exercise: Run Redis locally
 ===========================
-![](https://github.com/kenerbe/icons/blob/master/src/Redis.png)
 
-To install Redis locally (on Mac), open a terminal and run:
 To install ![](https://github.com/kenerbe/icons/blob/master/src/Redis.png ), locally (on Mac), open a terminal and run:
-
-  `brew install redis`
+```
+    brew install redis
+```
 
 To run a Redis server locally (run in a separate terminal window), run:
 
-  `redis-server`
-
+```
+    redis-server
+```
 Use the Redis command line interface to interact directly with Redis:
 
-  `redis-cli`
-
+```
+    redis-cli
+```
 To load and display a hash value called "my_hash" with key value pairs, type:
 
 ```
@@ -53,11 +54,15 @@ Create a file called index.js and add the following [code](https://git.nmlv.nml.
 
 In another terminal window, run the Redis server
 
-  `redis-server`
+```
+    redis-server
+```
 
 To run the Node.js index.js code type:
 
-  `node index.js`
+```
+    node index.js
+```
 
 If everything work, you should see "Redis is ready - running locally".
 
