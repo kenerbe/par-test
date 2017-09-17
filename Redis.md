@@ -42,7 +42,7 @@ To interact with Redis via Node.js, create a new Node.js project called "redis-t
     npm install --Save redis
 ```
 
-Create a file called index.js and add the following [code](https://git.nmlv.nml.com/ERB2143/eng-tips-one/blob/master/redis-test/index.js).  
+Create a file called index.js and add the following [code](https://github.com/kenerbe/par-test/blob/master/index.js).  
 
 ```js
     var redis = require('redis');
