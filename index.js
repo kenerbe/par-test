@@ -7,6 +7,7 @@ redisClient.on('ready',function() {
 
 redisClient.on('error',function() {
   console.log("Error with Redis - running locally")
+  process.exit(1)
 })
 
 // Write our beer choices to Redis via a hash
@@ -19,6 +20,7 @@ redisClient.on('error',function() {
 redisClient.hmset('beer', 'choice1', 'PBR', 'choice2', 'AlphaKing', 'choice3', 'SilurianStout',function(err, reply) {
   if (err) {
     console.log(err)
+    process.exit(1)
   }
   console.log('Redis hash returned: ' + reply)
 })
@@ -27,6 +29,7 @@ redisClient.hmset('beer', 'choice1', 'PBR', 'choice2', 'AlphaKing', 'choice3', '
 redisClient.hgetall('beer',function(err,reply) {
   if (err) {
     console.log(err)
+    process.exit(1)
   }
   console.log(reply)
 })
@@ -36,6 +39,7 @@ redisClient.hgetall('beer',function(err,reply) {
 redisClient.del('beer',function(err,reply) {
   if (err) {
     console.log(err)
+    process.exit(1)
   }
   console.log('Redis delete returned: ' + reply)
 })
@@ -44,6 +48,7 @@ redisClient.del('beer',function(err,reply) {
 redisClient.hmset('beer', 'choice1', 'PBR', 'choice2', 'AlphaKing', 'choice3', 'SilurianStout',function(err, reply) {
   if (err) {
     console.log(err)
+    process.exit(1)
   }
   console.log('Redis hash returned: ' + reply)
   redisClient.expire('beer', 10)
